@@ -12,7 +12,7 @@
             '&sort=updated',
       type: 'GET',
       headers: { 'Authorization': 'token ' + githubToken },
-      success: function(data, message, xhr) {
+      success: function(data) {
         repos.all = data;
       }
     }).done(callback);
